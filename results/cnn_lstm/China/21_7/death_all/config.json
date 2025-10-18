@@ -1,0 +1,89 @@
+{
+  "countries": [
+    "China"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [
+    "new_deaths",
+    "new_recovered",
+    "retail_and_recreation_percent_change_from_baseline",
+    "grocery_and_pharmacy_percent_change_from_baseline",
+    "parks_percent_change_from_baseline",
+    "transit_stations_percent_change_from_baseline",
+    "workplaces_percent_change_from_baseline",
+    "residential_percent_change_from_baseline",
+    "C6M_Stay at home requirements",
+    "StringencyIndex_Average",
+    "GovernmentResponseIndex_Average",
+    "ContainmentHealthIndex_Average",
+    "EconomicSupportIndex"
+  ],
+  "input_window": 21,
+  "forecast_steps": 7,
+  "split_ratio": 0.8,
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      1
+    ]
+  },
+  "cnn_param_grid": {
+    "filters": [
+      32,
+      64
+    ],
+    "kernel_size": [
+      2
+    ],
+    "activation": [
+      "relu"
+    ],
+    "pool_size": [
+      2
+    ]
+  },
+  "lstm_param_grid": {
+    "units": [
+      32,
+      64
+    ],
+    "activation": [
+      "relu"
+    ]
+  },
+  "training_param_grid": {
+    "batch_size": [
+      32
+    ],
+    "epochs": [
+      50
+    ],
+    "validation_split": [
+      0.2
+    ],
+    "patience": [
+      10
+    ]
+  },
+  "selected_hyperparams": {
+    "China": {
+      "cnn": {
+        "filters": 64,
+        "kernel_size": 2,
+        "activation": "relu",
+        "pool_size": 2
+      },
+      "lstm": {
+        "units": 64,
+        "activation": "relu"
+      },
+      "training": {
+        "epochs": 50,
+        "batch_size": 32,
+        "validation_split": 0.2,
+        "patience": 10
+      }
+    }
+  }
+}

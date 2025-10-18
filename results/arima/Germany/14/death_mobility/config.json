@@ -1,0 +1,40 @@
+{
+  "countries": [
+    "Germany"
+  ],
+  "target_var": "new_cases",
+  "use_exogenous": true,
+  "exogenous_vars": [
+    "new_deaths",
+    "new_recovered",
+    "retail_and_recreation_percent_change_from_baseline",
+    "grocery_and_pharmacy_percent_change_from_baseline",
+    "parks_percent_change_from_baseline",
+    "transit_stations_percent_change_from_baseline",
+    "workplaces_percent_change_from_baseline",
+    "residential_percent_change_from_baseline"
+  ],
+  "forecast_steps": 14,
+  "split_ratio": 0.8,
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      100
+    ],
+    "exog_type": "min_max"
+  },
+  "seasonal": false,
+  "seasonal_period": 7,
+  "order": [
+    5,
+    1,
+    4
+  ],
+  "seasonal_order": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

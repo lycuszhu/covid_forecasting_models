@@ -1,0 +1,53 @@
+{
+  "countries": [
+    "Brazil"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [
+    "new_deaths",
+    "new_recovered",
+    "C6M_Stay at home requirements",
+    "StringencyIndex_Average",
+    "GovernmentResponseIndex_Average",
+    "ContainmentHealthIndex_Average",
+    "EconomicSupportIndex"
+  ],
+  "input_window": 21,
+  "forecast_steps": 7,
+  "split_ratio": 0.8,
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      1
+    ]
+  },
+  "lstm_param_grid": {
+    "batch_size": [
+      32
+    ],
+    "hidden_dim": [
+      32,
+      64,
+      128
+    ],
+    "dropout": [
+      0.1,
+      0.3
+    ],
+    "learning_rate": [
+      0.001,
+      0.0005
+    ],
+    "epochs": [
+      50
+    ]
+  },
+  "best_model_params": {
+    "batch_size": 32,
+    "hidden_dim": 128,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "epochs": 50
+  }
+}

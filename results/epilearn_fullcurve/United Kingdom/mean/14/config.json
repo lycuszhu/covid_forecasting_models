@@ -1,0 +1,11 @@
+{
+  "country": "United Kingdom",
+  "target_var": "new_cases",
+  "match_length": 28,
+  "forecast_length": 14,
+  "forecast_type": "mean",
+  "smoothing_sigma": 2.0,
+  "lambda_": 108.0,
+  "mu": 0.0675,
+  "split_ratio": 0.8
+}

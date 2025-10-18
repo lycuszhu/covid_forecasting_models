@@ -1,0 +1,21 @@
+{
+  "countries": [
+    "US"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [],
+  "forecast_steps": 7,
+  "split_ratio": 0.8,
+  "seasonalities": [
+    {
+      "name": "weekly",
+      "period": 7,
+      "fourier_order": 3
+    },
+    {
+      "name": "monthly",
+      "period": 30.5,
+      "fourier_order": 5
+    }
+  ]
+}

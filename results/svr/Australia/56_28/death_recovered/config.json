@@ -1,0 +1,175 @@
+{
+  "countries": [
+    "Australia"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [
+    "new_deaths",
+    "new_recovered"
+  ],
+  "input_window": 56,
+  "forecast_steps": 28,
+  "split_ratio": 0.8,
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      100
+    ]
+  },
+  "kernel": "rbf",
+  "tuning_strategy": "grid",
+  "param_grid": {
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "gamma": [
+      "scale",
+      "auto"
+    ]
+  },
+  "best_model_params": {
+    "step_0": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_1": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_2": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_3": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_4": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_5": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_6": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_7": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_8": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_9": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_10": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_11": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_12": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_13": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_14": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_15": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_16": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_17": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_18": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_19": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_20": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_21": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_22": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_23": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_24": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_25": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_26": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_27": {
+      "C": 0.1,
+      "gamma": "scale",
+      "epsilon": 0.1
+    }
+  }
+}

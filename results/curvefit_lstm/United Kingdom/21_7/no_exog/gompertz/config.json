@@ -1,0 +1,45 @@
+{
+  "countries": [
+    "United Kingdom"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [],
+  "input_window": 21,
+  "forecast_steps": 7,
+  "split_ratio": 0.7,
+  "curvefit_model": "gompertz",
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      1
+    ]
+  },
+  "lstm_param_grid": {
+    "units": [
+      32,
+      64,
+      128
+    ],
+    "dropout": [
+      0.2
+    ],
+    "learning_rate": [
+      0.001,
+      0.0005
+    ],
+    "epochs": [
+      50
+    ],
+    "batch_size": [
+      32
+    ]
+  },
+  "selected_lstm_params": {
+    "units": 64,
+    "dropout": 0.2,
+    "learning_rate": 0.0005,
+    "epochs": 50,
+    "batch_size": 32
+  }
+}

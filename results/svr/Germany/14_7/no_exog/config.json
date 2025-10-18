@@ -1,0 +1,67 @@
+{
+  "countries": [
+    "Germany"
+  ],
+  "target_var": "new_cases",
+  "exogenous_vars": [],
+  "input_window": 14,
+  "forecast_steps": 7,
+  "split_ratio": 0.8,
+  "scaler_config": {
+    "type": "min_max",
+    "min_max_range": [
+      0,
+      100
+    ]
+  },
+  "kernel": "rbf",
+  "tuning_strategy": "grid",
+  "param_grid": {
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "gamma": [
+      "scale",
+      "auto"
+    ]
+  },
+  "best_model_params": {
+    "step_0": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_1": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_2": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_3": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_4": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_5": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    },
+    "step_6": {
+      "C": 10,
+      "gamma": "scale",
+      "epsilon": 0.1
+    }
+  }
+}
