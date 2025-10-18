@@ -1,0 +1,20 @@
+pandas
+numpy==1.26.0
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+jupyter
+ipykernel
+pmdarima==2.0.4 --only-binary :all:
+prophet
+tensorflow
+torch
+torchvision
+lxml
+geopandas
+ax-platform
+plotly
+plotly-geo
+shapely
+pyshp
